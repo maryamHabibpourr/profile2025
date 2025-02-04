@@ -17,7 +17,7 @@ const Heading: React.FC<HeadingProps> = ({ className, title, text, tag }: Headin
     >
       {title && <h2 className="h1">{title}</h2>}
       {tag && <TagLine className="mb-4 mt-4 justify-center text-red-800">{tag}</TagLine>}
-      {text && <p className="text-sm mt-2 font-semibold text-gray-600 text-justify">{text}</p>}
+      {text && <p className="text-base mt-2 font-semibold text-gray-600 text-justify px-2">{text}</p>}
     </div>
   );
 };

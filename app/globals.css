@@ -14,15 +14,12 @@
 
 @layer utilities {
   .h1 {
-    @apply  w-full font-semibold  text-[1rem] md:text-[1.25rem] lg:text-[1.5rem] text-left border-b-2 border-black;
+    @apply  w-full font-semibold text-gray-600 text-[1rem] md:text-[1.25rem] lg:text-[1.5rem] text-left border-b-2 border-gray-600;
   }
 }
 
 
 
 
-@layer base {
-  :root {
-    --radius: 0.5rem;
-  }
-}
+
+

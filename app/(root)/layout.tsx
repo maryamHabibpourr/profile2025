@@ -16,12 +16,12 @@ export default async function RootLayout({
       }}
        >
         <section className="flex flex-row w-full md:w-1/2 border border-red-800  md:min-h-[1500px]">
-          <div className="h-[400px] w-2/3">
+          <div className="h-[400px] w-2/3 bg-green-800">
             <Image
               src="/mr.png"
               alt="maryam"
-              width={600}
-              height={600}
+              width={800}
+              height={800}
               style={{ objectFit: "cover" }}
             />
           </div>

@@ -14,22 +14,23 @@ export default function Error({
     console.error(error);
   }, [error]);
 
+
   return (
     <section className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
       <main className="mx-auto max-w-lg py-1 px-4 min-h-screen">
-        <h2 className="my-4 text-2xl font-bold">Something went wrong!</h2>
+        <h2 className="mt-10 text-red-800 text-base font-semibold">Something went wrong!</h2>
         <button
-          className="mb-4 p-4 bg-red-500 text-white rounded-xl"
+          className="mb-4 p-4 bg-red-500 text-gray-800 rounded-xl"
           onClick={
             () => reset()
           }
         >
           Try again
         </button>
-        <p className="text-xl">
+        <p className="text-base">
           Or go back to{" "}
           <Link href="/" className="underline">
-            Home 🏠
+            Home 
           </Link>
         </p>
       </main>
