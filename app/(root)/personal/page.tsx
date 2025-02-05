@@ -2,7 +2,7 @@ import Heading from "@/shared/Heading";
 import Image from "next/image";
 import React from "react";
 
-const page = () => {
+const Personal = () => {
   return (
     <main className="w-full h-fit-content py-12 px-4">
       <section className="container flex flex-row gap-2 items-cente mt-2 mb-4">
@@ -46,7 +46,7 @@ const page = () => {
               key="wikipedia"
               href="https://en.wikipedia.org/wiki/Special:Random"
               target="_blank"
-              className="text-red-800 font-semibold pl-1"
+              className="text-red-800 font-semibold"
             >
               Wikipedia's “random article”
             </a>,
@@ -55,7 +55,7 @@ const page = () => {
               key="twitter"
               href="https://twitter.com"
               target="_blank"
-              className="text-red-800 font-semibold pl-1"
+              className="text-red-800 font-semibold"
             >
               X (formerly Twitter)
             </a>,
@@ -110,4 +110,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Personal;
