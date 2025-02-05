@@ -4,7 +4,6 @@ import { getPostsMeta } from "@/lib/posts";
 import ListItem from "@/shared/ListItem";
 import Heading from "@/shared/Heading";
 
-
 const Docs = async () => {
   const posts = await getPostsMeta();
 
@@ -12,26 +11,24 @@ const Docs = async () => {
     return <p className="mt-10 text-center">Sorry, no posts available.</p>;
   }
 
-
-
   return (
     <main className="w-full h-fit-content py-12 px-4">
-      <Publication/>
+      <Publication />
       <section className="container pt-12 flex flex-col items-center">
-      <div className="container relative z-2">
-        <Heading
-          tag="Cutting-Edge Tips"
-          title="Select Blog Posts and Articles"
-        />
-        <div className="">
-          <ul className="w-full list-disc pl-6">
-            {posts.map((post) => (
-              <ListItem key={post.id} post={post} />
-            ))}
-          </ul>
+        <div className="container relative z-2">
+          <Heading
+            tag="Cutting-Edge Tips"
+            title="Select Blog Posts and Articles"
+          />
+          <div className="">
+            <ul className="w-full list-disc pl-6">
+              {posts.map((post) => (
+                <ListItem key={post.id} post={post} />
+              ))}
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
     </main>
   );
 };
