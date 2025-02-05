@@ -29,6 +29,7 @@ const Publication = () => {
    
       <section className="container flex flex-col items-center mt-2 mb-4">
       <Heading
+        className="text-justify"
         tag="What I did in AI"
         title="Publication."
         text="
