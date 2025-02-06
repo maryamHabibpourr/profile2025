@@ -85,12 +85,12 @@ const ProjectCard: React.FC<Project> = ({
               height={362}
               alt="image"
               className="w-full h-full object-cover"
-              onClick={() => setIsViewerOpen(true)} // وقتی روی تصویر کلیک شود، Viewer باز می‌شود
+              onClick={() => setIsViewerOpen(true)}     
             />
             <Viewer
               visible={isViewerOpen}
               onClose={() => setIsViewerOpen(false)}
-              images={[{ src: imageUrl, alt: name }]} // نمایش تصویر در Viewer
+              images={[{ src: imageUrl, alt: name }]} 
             />
           </>
         )}
