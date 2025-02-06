@@ -19,6 +19,32 @@
 }
 
 
+.blue-text-gradient {
+  color: #3b87a0;
+  color: -webkit-linear-gradient(to top, #2f80ed, #56ccf2);
+  color: linear-gradient(to top, #235ca8, #56ccf2);
+}
+
+.orange-text-gradient {
+  color: #f12711;
+  color: -webkit-linear-gradient(to top, #f12711, #f5af19);
+  color: linear-gradient(to top, #f12711, #f5af19);
+}
+
+.pink-text-gradient {
+  color: #ec008c;
+  color: -webkit-linear-gradient(to top, #ec008c, #fc6767);
+  color: linear-gradient(to top, #ec008c, #fc6767);
+}
+
+.green-text-gradient {
+  color: #11998e;
+  color: -webkit-linear-gradient(to top, #11998e, #38ef7d);
+  color: linear-gradient(to top, #11998e, #38ef7d);
+}
+
+
+
 
 
 

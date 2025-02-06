@@ -69,7 +69,7 @@ const Home = () => {
             ]}
           />
         </section>
-        <section className="flex gap-6 mt-6">
+        <section className="flex gap-6 mt-8">
           <TooltipProvider>
             {socialLinks.map((link, index) => (
               <Tooltip key={index}>
