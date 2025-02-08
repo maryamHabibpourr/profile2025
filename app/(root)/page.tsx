@@ -39,11 +39,16 @@ const Home = () => {
   const [showChatIcon, setShowChatIcon] = useState(false);
   const chatIconRef = useRef<HTMLButtonElement>(null);
 
-
-  
-  const {} = useChat({api: "/api/gemini"})
-
-
+  const {
+    messages,
+    input,
+    handleInputChange,
+    handleSubmit,
+    isLoading,
+    stop,
+    reload,
+    error,
+  } = useChat({ api: "/api/gemini" });
 
   useEffect(() => {
     const handleScroll = () => {
@@ -119,11 +124,69 @@ const Home = () => {
                 </CardHeader>
                 <CardContent>
                   <ScrollArea className="h-[300px] pr-4">
-                    <div className="w-full mt-32 text-gray-500 items-center justify-center flex gap-3">
-                      no massage yet.
-                    </div>
+                    {messages?.length === 0 && (
+                      <div className="w-full mt-32 text-gray-500 items-center justify-center flex gap-3">
+                        no massage yet.
+                      </div>
+                    )}
+                    {messages?.map((message, index) => (
+                      <div
+                        key={index}
+                        className="flex flex-col items-start space-y-2 px-4 py-3 text-sm"
+                      >
+                        gfhdjyr
+                      </div>
+                    ))}
+                    {isLoading && (
+                      <div className="w-full items-center flex justify-center gap-3">
+                        <Loader2 className="animate-spin h-5 w-5 text-primary" />
+                        <button
+                          className="underline"
+                          type="button"
+                          onClick={() => stop()}
+                        >
+                          abort
+                        </button>
+                      </div>
+                    )}
+                    {error && (
+                      <div className="w-full items-center flex justify-center gap-3">
+                        <div>An error occoured.</div>
+                        <button
+                          className="underline"
+                          type="button"
+                          onClick={() => reload()}
+                        >
+                          Retry
+                        </button>
+                      </div>
+                    )}
                   </ScrollArea>
                 </CardContent>
+                <CardFooter
+                  onSubmit={handleSubmit}
+                  className="flex w-full items-center space-x-2"
+                >
+                  <form
+                    onSubmit={handleSubmit}
+                    className="flex w-full items-center space-x-2"
+                  >
+                    <Input
+                      value={input}
+                      onChange={handleInputChange}
+                      className="flex-1"
+                      placeholder="type your message here..."
+                    />
+                    <Button
+                      type="submit"
+                      className="size-9"
+                      disabled={isLoading}
+                      size="icon"
+                    >
+                      <Send className="size-4" />
+                    </Button>
+                  </form>
+                </CardFooter>
               </Card>
             </motion.div>
           )}
