@@ -6,7 +6,7 @@ import { initialMessage } from "@/lib/data";
 
 
 const google = createGoogleGenerativeAI ({
-    apiKey: process.env.GOOGLE_API_KEY || "",
+    apiKey: process.env.NEXT_PUBLIC_GOOGLE_API_KEY || "",
 })
 
 
