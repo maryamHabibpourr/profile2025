@@ -35,7 +35,7 @@ const socialLinks = [
 
 
 
-const overView = () => {
+const Hero = () => {
   return (
     <div>
       <section className="container flex flex-col gap-2 items-center mt-2 mb-4">
@@ -105,4 +105,4 @@ const overView = () => {
   );
 };
 
-export default overView;
+export default Hero;

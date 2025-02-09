@@ -22,7 +22,11 @@ export const navigation = [
     title: "Personal",
     path: "/personal",
   },
-
+  {
+    id: "5",
+    title: "Contact",
+    path: "/contact",
+  },
 ];
 
 

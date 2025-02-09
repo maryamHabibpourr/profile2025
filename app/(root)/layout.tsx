@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import "../globals.css";
 import Image from "next/image";
 import Footer from "@/components/Footer";
+import ChatBot from "@/components/ChatBot";
 
 export default async function RootLayout({
   children,
@@ -10,11 +11,13 @@ export default async function RootLayout({
 }>) {
   return (
     <main className="min-h-screen w-full">
-      <div className="w-full flex flex-col md:flex-row p-2 md:p-20 gap-2 md:gap-10"
-      style={{
-        background: "linear-gradient(to bottom, #ff9a9e 0%, #fad0c4 50%, rgba(251,194,235, 0) 100%)"
-      }}
-       >
+      <div
+        className="w-full flex flex-col md:flex-row p-2 md:p-20 gap-2 md:gap-10"
+        style={{
+          background:
+            "linear-gradient(to bottom, #ff9a9e 0%, #fad0c4 50%, rgba(251,194,235, 0) 100%)",
+        }}
+      >
         <section className="flex flex-row w-full md:w-1/2 border border-red-800  md:min-h-[1500px]">
           <div className="h-[400px] w-2/3 bg-green-800">
             <Image
@@ -35,6 +38,7 @@ export default async function RootLayout({
             <Navbar />
           </div>
           <div className="border border-red-800 min-h-screen">{children}</div>
+          <ChatBot />
         </section>
       </div>
       <Footer />
