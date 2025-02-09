@@ -10,28 +10,32 @@ import { Mail, Globe } from "lucide-react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { Button } from "./ui/button";
 
+
+
 const socialLinks = [
   {
     href: "https://www.linkedin.com/in/maryam-habibpour-0a6071142/",
-    icon: <FaLinkedin className="w-6 h-6 text-gray-600" />,
+    icon: <FaLinkedin className="w-6 h-6 text-red-600" />,
     label: "LinkedIn",
   },
   {
     href: "https://github.com/maryamHabibpourr",
-    icon: <FaGithub className="w-6 h-6 text-gray-600" />,
+    icon: <FaGithub className="w-6 h-6 text-red-600" />,
     label: "GitHub",
   },
   {
     href: "mailto:e.maryamhabibpour@gmail.com",
-    icon: <Mail className="w-6 h-6 text-gray-600" />,
+    icon: <Mail className="w-6 h-6 text-red-600" />,
     label: "Email",
   },
   {
     href: "https://deepai.org/profile/maryam-habibpour",
-    icon: <Globe className="w-6 h-6 text-gray-600" />,
+    icon: <Globe className="w-6 h-6 text-red-600" />,
     label: "DeepAI Profile",
   },
 ];
+
+
 
 
 
@@ -39,11 +43,11 @@ const Hero = () => {
   return (
     <div>
       <section className="container flex flex-col gap-2 items-center mt-2 mb-4">
-        <div className="font-semibold italic text-gray-600 text-lg mb-8">
+        <div className="font-dancing-script text-gray-600 text-lg mb-8">
           <p>Hello world..!</p>
-          <p>My name is Maryam Habibpour</p>
+          <p>My name is Maryam Habibpour,</p>
           <p>
-            and in Persian language is{" "}
+            in Persian language is{" "}
             <span className="font-light italic text-gray-600 text-lg">
               مریم
             </span>

@@ -101,12 +101,8 @@
     @apply text-14 cursor-pointer font-medium text-bankGradient;
   }
 
-  .sidebar-link {
-    @apply flex gap-3 items-center py-1 md:p-3 2xl:p-4 rounded-lg justify-center xl:justify-start;
-  }
-
-  .sidebar-label {
-    @apply text-16 font-semibold text-12;
+  .navbar-label {
+    @apply  text-xs md:text-sm font-semibold;
   }
 }
 

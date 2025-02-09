@@ -31,7 +31,14 @@ export const navigation = [
 
 
 
-
+export const links = [
+  { href: "https://nextjs.org", label: "Next.js" },
+  { href: "https://tailwindcss.com", label: "Tailwind CSS" },
+  { href: "https://www.django-rest-framework.org/", label: "Django Rest Framework" },
+  { href: "https://openai.com", label: "openai" },
+  { href: "https://gemini.com", label: "Gemini" },
+  { href: "https://shadcn.com", label: "shadcn" },
+];
 
 
 export const projects = [
