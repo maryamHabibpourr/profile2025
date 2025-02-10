@@ -95,7 +95,7 @@ const ChatBot = () => {
               ref={chatIconRef}
               onClick={toggleChat}
               size="icon"
-              className="rounded-full size-14 p-2 shadow-lg"
+              className="rounded-full size-14 p-2 shadow-lg bg-red-600"
             >
               {!isChatOpen ? (
                 <MessageCircle className="size-12" />
@@ -117,7 +117,7 @@ const ChatBot = () => {
           >
             <Card className="border-2 bg-red-200">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-3">
-                <CardTitle className="text-lg font-bold">
+                <CardTitle className="text-lg font-bold text-red-600">
                   chat with MARYAM AI
                 </CardTitle>
                 <Button
@@ -231,12 +231,12 @@ const ChatBot = () => {
                   <Input
                     value={input}
                     onChange={handleInputChange}
-                    className="flex-1"
+                    className="flex-1 text-red-600"
                     placeholder="type your message here..."
                   />
                   <Button
                     type="submit"
-                    className="size-9"
+                    className="size-9 bg-red-600"
                     disabled={isLoading}
                     size="icon"
                   >

@@ -37,13 +37,11 @@ const socialLinks = [
 
 
 
-
-
 const Hero = () => {
   return (
     <div>
       <section className="container flex flex-col gap-2 items-center mt-2 mb-4">
-        <div className="font-dancing-script text-gray-600 text-lg mb-8">
+        <div className="font-dancing-script text-gray-600 text-lg my-2">
           <p>Hello world..!</p>
           <p>My name is Maryam Habibpour,</p>
           <p>
@@ -91,7 +89,7 @@ const Hero = () => {
                   <a href={link.href} target="_blank" rel="noopener noreferrer">
                     <Button
                       variant="outline"
-                      className="py-2 px-2 rounded-full bg-transparent"
+                      className="py-2 px-3 rounded-full bg-transparent"
                     >
                       {link.icon}
                     </Button>

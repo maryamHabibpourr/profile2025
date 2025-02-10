@@ -14,11 +14,11 @@ type HeadingProps ={
 const Heading: React.FC<HeadingProps> = ({ className, title, text, tag }: HeadingProps) => {
   return (
     <div
-      className={`${className} w-full mx-auto my-4`}
+      className={`${className} w-full mx-auto`}
     >
       {title && <h2 className="h1">{title}</h2>}
       {tag && <TagLine className="mb-4 mt-4 justify-center text-red-800">{tag}</TagLine>}
-      {text && <p className="text-base mt-2 font-semibold text-gray-600 px-2">{text}</p>}
+      {text && <p className="text-base mt-2 font-semibold text-gray-700 px-2">{text}</p>}
     </div>
   );
 };
