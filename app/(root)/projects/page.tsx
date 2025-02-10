@@ -5,7 +5,7 @@ import React from "react";
 
 const Project = () => {
   return (
-    <main className="w-full h-fit-content py-4 px-4">
+    <main className="w-full h-fit-content py-2 px-4">
       <section className="container flex flex-col gap-2 items-center mt-2 mb-4">
         <Heading
           tag="My Skills"
@@ -13,22 +13,13 @@ const Project = () => {
           text={
             <>
               I have worked on{" "}
-              <span className="font-bold">
-                full-stack web applications
-              </span>
-              ,{" "}
-              <span className="font-bold">
-                AI-driven platforms
-              </span>
-              , and{" "}
-              <span className="font-bold">
-                automation solutions
-              </span>
-              , using{" "}
+              <span className="">full-stack web applications</span>,{" "}
+              <span className="">AI-driven platforms</span>, and{" "}
+              <span className="">automation solutions</span>, using{" "}
               <a
                 href="https://nextjs.org"
                 target="_blank"
-                className="text-red-800 font-semibold"
+                className="text-red-800"
               >
                 Next.js
               </a>
@@ -36,7 +27,7 @@ const Project = () => {
               <a
                 href="https://reactjs.org"
                 target="_blank"
-                className="text-red-800 font-semibold"
+                className="text-red-800"
               >
                 React
               </a>
@@ -44,26 +35,19 @@ const Project = () => {
               <a
                 href="https://www.djangoproject.com"
                 target="_blank"
-                className="text-red-800 font-semibold"
+                className="text-red-800"
               >
                 Django
               </a>
-              , often containerized with{" "}
-              <span className=" font-bold">Docker</span>.
+              , often containerized with <span className="">Docker</span>.
               <br />
               My projects span real estate platforms, SaaS applications, and{" "}
-              <span className="font-bold">
-                machine learning-based fraud detection
-              </span>
-              . I specialize in{" "}
-              <span className=" font-bold">
-                SEO optimization
-              </span>
-              , real-time interactions with{" "}
-              <span className="font-bold">WebSockets</span>,
+              <span className="">machine learning-based fraud detection</span>.
+              I specialize in <span className="">SEO optimization</span>,
+              real-time interactions with <span className="">WebSockets</span>,
               and geolocation features using{" "}
-              <span className=" font-bold">React Leaflet</span>{" "}
-              and <span className="font-bold">GeoDjango</span>
+              <span className="">React Leaflet</span> and{" "}
+              <span className="">GeoDjango</span>
               .
               <br />
               On the backend, I leverage{" "}
@@ -74,15 +58,12 @@ const Project = () => {
               >
                 Django Rest Framework (DRF)
               </a>{" "}
-              with{" "}
-              <span className="font-bold">PostgreSQL</span>,
-              while my frontend expertise includes{" "}
-              <span className="font-bold">TypeScript</span>,{" "}
-              <span className="font-bold">Tailwind CSS</span>,
-              and <span className=" font-bold">Zustand</span>.
+              with <span className="">PostgreSQL</span>, while my frontend
+              expertise includes <span className="">TypeScript</span>,{" "}
+              <span className="">Tailwind CSS</span>, and{" "}
+              <span className="">Zustand</span>.
               <br />
-              My workflow integrates{" "}
-              <span className="font-bold">CI/CD</span>, Linux
+              My workflow integrates <span className="">CI/CD</span>, Linux
               environments, and business automation, ensuring high-performance,
               scalable applications.
             </>
@@ -92,7 +73,8 @@ const Project = () => {
         <div className="flex flex-col">
           {projects.map((project) => (
             <ProjectCard
-              className="bg-gray-400"
+              key={project.id}
+              className="bg-red-100"
               index={project.id}
               name={project.name}
               year={project.year}

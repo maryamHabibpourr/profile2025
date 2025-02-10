@@ -3,6 +3,7 @@ import Publication from "@/components/Publication";
 import { getPostsMeta } from "@/lib/posts";
 import ListItem from "@/shared/ListItem";
 import Heading from "@/shared/Heading";
+import MachinLearningProjects from "@/components/MachinLearningProjects";
 
 const Docs = async () => {
   const posts = await getPostsMeta();
@@ -12,8 +13,9 @@ const Docs = async () => {
   }
 
   return (
-    <main className="w-full h-fit-content py-12 px-4">
+    <main className="w-full h-fit-content py-4 px-4">
       <Publication />
+      <MachinLearningProjects/>
       <section className="container pt-12 flex flex-col items-center">
         <div className="container relative z-2">
           <Heading

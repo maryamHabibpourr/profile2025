@@ -4,9 +4,9 @@ import React from "react";
 
 const Personal = () => {
   return (
-    <main className="w-full h-fit-content py-12 px-4">
-      <section className="container flex flex-row gap-2 items-cente mt-2 mb-4">
-        <div className="w-1/2">
+    <main className="w-full h-fit-content py-4 px-4">
+      <section className="w-full flex flex-col md:flex-row gap-2 items-center justify-center">
+        <div className="flex items-center">
           <Image
             src="/maryam.jpg"
             alt="maryam"
@@ -15,7 +15,7 @@ const Personal = () => {
             className="rounded-full"
           />
         </div>
-        <div className="w-1/2">
+        <div className="">
           <Heading
             title="Maryam."
             text={
@@ -36,6 +36,7 @@ const Personal = () => {
           />
         </div>
       </section>
+
       <section className="container flex flex-row gap-2 items-center mt-2 mb-4">
         <Heading
           className="text-justify"

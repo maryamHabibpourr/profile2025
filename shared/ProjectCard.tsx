@@ -70,14 +70,18 @@ const ProjectCard: React.FC<Project> = ({
         <div className="flex gap-2 mt-2">
           <TooltipProvider>
             {source_code_link && (
-              <Tooltip key={index}>
+              <Tooltip>
                 <TooltipTrigger asChild>
-                  <a href={source_code_link} target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={source_code_link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Button
                       variant="outline"
                       className="py-2 px-3 rounded-full bg-transparent"
                     >
-                  <FaGithub size={20} className="text-red-600" />
+                      <FaGithub size={20} className="text-red-600" />
                     </Button>
                   </a>
                 </TooltipTrigger>
@@ -88,17 +92,20 @@ const ProjectCard: React.FC<Project> = ({
             )}
           </TooltipProvider>
 
-
           <TooltipProvider>
             {website_link && (
-              <Tooltip key={index}>
+              <Tooltip>
                 <TooltipTrigger asChild>
-                  <a href={website_link} target="_blank" rel="noopener noreferrer">
+                  <a
+                    href={website_link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <Button
                       variant="outline"
                       className="py-2 px-3 rounded-full bg-transparent"
                     >
-                     <Globe size={20} className="text-red-600" />
+                      <Globe size={20} className="text-red-600" />
                     </Button>
                   </a>
                 </TooltipTrigger>

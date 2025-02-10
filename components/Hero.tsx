@@ -6,11 +6,9 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import Heading from "@/shared/Heading";
-import { Mail, Globe } from "lucide-react";
+import { Mail, BrainCircuit } from "lucide-react";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { Button } from "./ui/button";
-
-
 
 const socialLinks = [
   {
@@ -30,12 +28,10 @@ const socialLinks = [
   },
   {
     href: "https://deepai.org/profile/maryam-habibpour",
-    icon: <Globe className="w-6 h-6 text-red-600" />,
+    icon: <BrainCircuit className="w-6 h-6 text-red-600" />,
     label: "DeepAI Profile",
   },
 ];
-
-
 
 const Hero = () => {
   return (

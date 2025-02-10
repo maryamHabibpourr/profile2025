@@ -1,10 +1,20 @@
 "use client"; 
 
 import React,{useState} from "react";
-import Viewer from 'react-viewer';
+import dynamic from "next/dynamic";
+// import Viewer from 'react-viewer';
 import Heading from "@/shared/Heading";
 import Link from "next/link";
 import Image from "next/image";
+
+
+
+
+const Viewer = dynamic(() => import("react-viewer"), {
+  ssr: false, 
+});
+
+
 
 const images = [
   { src: '/uncertainty.jpg', alt: 'Uncertainty' },
@@ -27,7 +37,7 @@ const Publication = () => {
 
     return (
    
-      <section className="container flex flex-col items-center mt-2 mb-4">
+      <section className="container flex flex-col items-center">
       <Heading
         className="text-justify"
         tag="What I did in AI"
