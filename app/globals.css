@@ -17,7 +17,7 @@
   }
 
   .border-border {
-    @apply  border-gray-800; 
+    @apply border-gray-800;
   }
 
   .sheet-content button {
@@ -76,7 +76,6 @@
     @apply text-[36px] leading-[44px];
   }
 
-
   .contact-form {
     @apply flex min-h-screen w-full  flex-col justify-center gap-5 py-2 md:gap-8;
   }
@@ -94,7 +93,7 @@
   }
 
   .form-btn {
-    @apply text-16 rounded-lg border border-white bg-black font-semibold text-white;
+    @apply text-16 bg-red-600 font-semibold text-white rounded-xl hover:bg-red-800;
   }
 
   .form-link {
@@ -102,11 +101,9 @@
   }
 
   .navbar-label {
-    @apply  text-xs md:text-sm font-semibold;
+    @apply text-xs md:text-sm font-semibold;
   }
 }
-
-
 
 .blue-text-gradient {
   color: #3b87a0;

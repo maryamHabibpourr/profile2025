@@ -49,7 +49,7 @@ const Hero = () => {
         </div>
         <section>
           <Heading
-            className="text-justify"
+            className="md:text-justify"
             tag="What I did?"
             title="History."
             text={[

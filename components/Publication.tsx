@@ -39,8 +39,8 @@ const Publication = () => {
    
       <section className="container flex flex-col items-center">
       <Heading
-        className="text-justify"
-        tag="What I did in AI"
+        className="md:text-justify"
+        tag="What I did in AI-In Collaboration with Deakin University"
         title="Publication."
         text="
         Uncertainty Quantification (UQ) enhances the reliability of AI models by
@@ -53,7 +53,7 @@ const Publication = () => {
         allowing expert intervention when needed. This improves trust, interpretability,
         and decision-making in AI-driven systems."
       />
-      <div className="w-full flex flex-row gap-2 mt-4">
+      <div className="w-full flex flex-col md:flex-row gap-2 mt-4">
         <ul className="list-disc pl-6">
           <li className="text-gray-600 mt-2">
             <Link
@@ -76,7 +76,7 @@ const Publication = () => {
             </Link>
           </li>
         </ul>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col items-center justify-center gap-2">
           {images.map((image, index) => (
             <div key={index} onClick={() => openViewer(index)} className="cursor-pointer">
               <Image

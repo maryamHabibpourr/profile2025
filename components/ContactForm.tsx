@@ -70,11 +70,11 @@ export function ContactForm() {
   }
 
   return (
-    <section className="flex-1 min-h-screen m-2 p-2">
+    <section className="flex-1 mt-8 p-2">
       <Form {...form}>
         <form
           onSubmit={form.handleSubmit(onSubmit)}
-          className="space-y-4 shadow-[0px_4px_6px_0px_rgba(0,_0,_0,_0.1)] p-4 bg-red-100 rounded"
+          className="space-y-4 shadow-[0px_4px_6px_0px_rgba(0,_0,_0,_0.1)] p-4 bg-red-100 rounded-xl"
         >
           <FormField
             control={form.control}
@@ -119,7 +119,7 @@ export function ContactForm() {
           />
 
           {isLoading ? (
-            <Button type="button" disabled={isLoading} className="form-btn">
+            <Button type="button" disabled={isLoading} className="form-btn hover:bg-red-800">
               <Loader2 size={16} className="animate-spin" /> sending...
             </Button>
           ) : (

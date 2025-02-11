@@ -6,40 +6,36 @@ const Personal = () => {
   return (
     <main className="w-full h-fit-content py-4 px-4">
       <section className="w-full flex flex-col md:flex-row gap-2 items-center justify-center">
-        <div className="flex items-center">
-          <Image
-            src="/maryam.jpg"
-            alt="maryam"
-            width={250}
-            height={250}
-            className="rounded-full"
-          />
-        </div>
-        <div className="">
-          <Heading
-            title="Maryam."
-            text={
-              <>
-                My name is{" "}
-                <span className="text-red-800 font-semibold">Maryam</span>{" "}
-                (written as
-                <span className="text-red-800 font-semibold"> "مریم"</span> in
-                Persian). It is a name of deep historical and religious
-                significance, as it is also the name of
-                <span className="text-red-800 font-semibold">
-                  {" "}
-                  Mary, the mother of Jesus Christ
-                </span>
-                , revered in both Christianity and Islam.
-              </>
-            }
-          />
-        </div>
+        <Image
+          src="/maryam.jpg"
+          alt="maryam"
+          width={250}
+          height={250}
+          className="rounded-full"
+        />
+        <Heading
+          title="Maryam."
+          text={
+            <>
+              My name is{" "}
+              <span className="text-red-800 font-semibold">Maryam</span>{" "}
+              (written as
+              <span className="text-red-800 font-semibold"> "مریم"</span> in
+              Persian). It is a name of deep historical and religious
+              significance, as it is also the name of
+              <span className="text-red-800 font-semibold">
+                {" "}
+                Mary, the mother of Jesus Christ
+              </span>
+              , revered in both Christianity and Islam.
+            </>
+          }
+        />
       </section>
 
-      <section className="container flex flex-row gap-2 items-center mt-2 mb-4">
+      <section className="container flex flex-row gap-2 items-center mt-8  md:mt-4 mb-4">
         <Heading
-          className="text-justify"
+          className="md:text-justify"
           title="Activities, Interests, Hobbies."
           text={[
             "I have an insatiable hunger for learning—random documentaries, tech articles, history, psychology, and even deep dives into ",
@@ -101,7 +97,7 @@ const Personal = () => {
               key="weighttraining"
               className="text-red-800 font-semibold pl-1"
             >
-              weight training
+              Strength training
             </span>,
             ", which has become an essential part of my routine.",
           ]}

@@ -50,7 +50,7 @@ export default async function RootLayout({
             </h2>
             <Navbar />
           </div>
-          <div className="min-h-screen">{children}</div>
+          <div className="">{children}</div>
         </section>
         <ChatBot />
       </div>

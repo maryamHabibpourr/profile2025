@@ -9,7 +9,7 @@ const MachinLearningProjects = () => {
     <section className="container flex flex-col items-center mt-6">
       <Heading
         className="text-justify"
-        tag="My AI & ML Experiments"
+        tag="Case Studies"
         title="Applied AI & ML Research."
         text=""
       />
