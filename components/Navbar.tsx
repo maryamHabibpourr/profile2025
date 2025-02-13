@@ -9,7 +9,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="max-w-[calc(100%-4%]  md:w-full flex items-center justify-center gap-4 md:gap-8 p-4 bg-red-200 backdrop-blur-sm">
+    <nav className="max-w-[calc(100%-2%]  md:w-full flex items-center justify-center gap-4 md:gap-5  lg:gap-10  p-4 bg-red-200 backdrop-blur-sm">
       {navigation.map((item) => {
         const isActive =
           pathname === item.path || pathname.startsWith(`${item.path}/`);

@@ -15,8 +15,8 @@ const Docs = async () => {
   return (
     <main className="w-full h-fit-content py-4 px-4">
       <Publication />
-      <MachinLearningProjects/>
-      <section className="container pt-12 flex flex-col items-center">
+      <MachinLearningProjects />
+      <section className="container pt-4 flex flex-col items-center">
         <div className="container relative z-2">
           <Heading
             tag="Cutting-Edge Tips"

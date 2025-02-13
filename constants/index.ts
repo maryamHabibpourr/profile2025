@@ -135,6 +135,9 @@ export const projects = [
   },
 ];
 
+
+
+
 export const caseStudies = [
   {
     id: 1,
@@ -145,7 +148,7 @@ export const caseStudies = [
       "https://drive.google.com/file/d/1S63qEZeCZgpiISsZnyKHsX4tWVVMHPN7/view",
   },
   {
-    d: 2,
+    id: 2,
     title: "Spine Health Analysis using PCA & Statistical Methods.",
     source_code_link:
       "https://colab.research.google.com/drive/1lPqJftCpY2j-AVPUrnDWvP65OJf_GGt4?usp=sharing",

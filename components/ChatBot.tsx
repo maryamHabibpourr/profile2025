@@ -1,3 +1,8 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable react/no-children-prop */
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
+
 "use client";
 
 import React, { useState, useEffect, useRef, Children } from "react";
@@ -115,7 +120,7 @@ const ChatBot = () => {
             transition={{ duration: 0.2 }}
             className="fixed bottom-20 right-4 z-50 w-[95%] md:w-[500px] "
           >
-            <Card className="border-2 bg-red-200">
+            <Card className="border-2 bg-red-100">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-3">
                 <CardTitle className="text-lg font-bold text-red-600">
                   chat with MARYAM AI
@@ -231,7 +236,7 @@ const ChatBot = () => {
                   <Input
                     value={input}
                     onChange={handleInputChange}
-                    className="flex-1 text-red-600"
+                    className="flex-1 text-gray-600"
                     placeholder="type your message here..."
                   />
                   <Button

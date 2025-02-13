@@ -1,6 +1,5 @@
 import React from "react";
 import Heading from "@/shared/Heading";
-import Link from "next/link";
 import CaseStudyCard from "@/shared/CaseStudyCard";
 import { caseStudies } from "@/constants";
 
