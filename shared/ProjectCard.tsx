@@ -25,7 +25,8 @@ type Project = {
   className?: string;
   description?: string;
   tags?: Tag[];
-  source_code_link?: string;
+  source_code_link_front?: string;
+  source_code_link_back?: string;
   website_link?: string;
   imageUrl?: string;
 };
@@ -36,7 +37,8 @@ const ProjectCard: React.FC<Project> = ({
   year,
   description,
   tags,
-  source_code_link,
+  source_code_link_front,
+  source_code_link_back,
   website_link,
   imageUrl,
   className,
@@ -45,7 +47,7 @@ const ProjectCard: React.FC<Project> = ({
 
   return (
     <div
-      className={`${className} w-full flex flex-col-reverse md:flex-row gap-2 my-2 p-4 rounded-xl`}
+      className={`${className} w-full flex flex-col-reverse md:flex-row items-center justify-center gap-2 my-2 p-4 rounded-xl`}
       key={index}
       style={{
         boxShadow:
@@ -69,11 +71,34 @@ const ProjectCard: React.FC<Project> = ({
 
         <div className="flex gap-2 mt-2">
           <TooltipProvider>
-            {source_code_link && (
+            {source_code_link_front && (
               <Tooltip>
                 <TooltipTrigger asChild>
                   <a
-                    href={source_code_link}
+                    href={source_code_link_front}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Button
+                      variant="outline"
+                      className="py-2 px-3 rounded-full bg-transparent"
+                    >
+                      <FaGithub size={20} className="text-green-600" />
+                    </Button>
+                  </a>
+                </TooltipTrigger>
+                <TooltipContent>
+                  <p>frontend codebase</p>
+                </TooltipContent>
+              </Tooltip>
+            )}
+          </TooltipProvider>
+          <TooltipProvider>
+            {source_code_link_back && (
+              <Tooltip>
+                <TooltipTrigger asChild>
+                  <a
+                    href={source_code_link_back}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -86,7 +111,7 @@ const ProjectCard: React.FC<Project> = ({
                   </a>
                 </TooltipTrigger>
                 <TooltipContent>
-                  <p>Code source</p>
+                  <p>backend codebase</p>
                 </TooltipContent>
               </Tooltip>
             )}
@@ -126,7 +151,7 @@ const ProjectCard: React.FC<Project> = ({
               width={250}
               height={250}
               alt="image"
-              className="w-full h-full object-cover"
+              className="object-cover"
               onClick={() => setIsViewerOpen(true)}
             />
             <Viewer

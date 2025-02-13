@@ -33,16 +33,79 @@ export const links = [
     href: "https://www.django-rest-framework.org/",
     label: "Django Rest Framework",
   },
+  {
+    href: "https://github.com/maryamHabibpourr/blogPost",
+    label: "Github",
+  },
   { href: "https://openai.com", label: "openai" },
   { href: "https://gemini.com", label: "Gemini" },
   { href: "https://shadcn.com", label: "shadcn" },
 ];
 
+
+
 export const projects = [
+  {
+    id: 3,
+    name: "Board",
+    year: 2024,
+    description:
+      "Board is a versatile platform that allows users to create and customize boards with various tools like text and drawings, making it easy to collaborate and organize ideas visually.",
+    tags: [
+      {
+        name: "convex",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "clerk",
+        color: "green-text-gradient",
+      },
+      {
+        name: "nextjs",
+        color: "pink-text-gradient",
+      },
+    ],
+    source_code_link_front:
+      "https://github.com/maryamHabibpourr/board-next-convex-clerk",
+    source_code_link_back: "",
+    website_link: "https://board-nine-theta.vercel.app/",
+    imageUrl: "/board.png",
+  },
+  {
+    id: 2,
+    name: "GilanJan",
+    year: 2023,
+    description:
+      "Gilanjan is a platform that allows users to reserve spots and services in Gilan province, making travel and leisure planning easier and more convenient.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "real chat",
+        color: "green-text-gradient",
+      },
+      {
+        name: "djangoRestFramework",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "postgress",
+        color: "orange-text-gradient",
+      },
+    ],
+    source_code_link_front:
+      "https://github.com/maryamHabibpourr/gilanjan.client",
+    source_code_link_back:
+      "https://github.com/maryamHabibpourr/gilanjan-django-api",
+    website_link: "https://gilanjan.com/",
+    imageUrl: "gilanjan.png",
+  },
   {
     id: 1,
     name: "Amlak Eeno",
-    year: 2020,
+    year: 2022,
     description:
       "Web-based platform designed for users to effortlessly search home rentals and purchases in Tehran, offering a convenient and efficient solution for housing needs.",
     tags: [
@@ -55,7 +118,7 @@ export const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "django",
+        name: "djangoRestframework",
         color: "orange-text-gradient",
       },
       {
@@ -63,65 +126,12 @@ export const projects = [
         color: "pink-text-gradient",
       },
     ],
-    source_code_link: "https://amlakeeno.ir/",
+    source_code_link_front:
+      "https://github.com/maryamHabibpourr/AmlakEenoClient-React-LeafLet",
+    source_code_link_back:
+      "https://github.com/maryamHabibpourr/AmlakeenoApi-Django-DRF",
     website_link: "https://amlakeeno.ir/",
-    imageUrl: "/uncertainty.jpg",
-  },
-  {
-    id: 2,
-    name: "GilanJan",
-    year: 2020,
-    description:
-      "Gilanjan is a platform that allows users to reserve spots and services in Gilan province, making travel and leisure planning easier and more convenient.",
-    tags: [
-      {
-        name: "next",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "real chat",
-        color: "green-text-gradient",
-      },
-      {
-        name: "django",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "redis",
-        color: "orange-text-gradient",
-      },
-    ],
-    source_code_link: "https://amlakeeno.ir/",
-    website_link: "https://amlakeeno.ir/",
-    imageUrl: "/uncertainty.jpg",
-  },
-  {
-    id: 3,
-    name: "Eshop",
-    year: 2020,
-    description:
-      "An all-in-one online shopping platform catering to your every need in life, from TVs and clothes to phones and more. Discover, shop, and order everything effortlessly!",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "redux",
-        color: "green-text-gradient",
-      },
-      {
-        name: "SCSS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "firebase",
-        color: "orange-text-gradient",
-      },
-    ],
-    source_code_link: "https://amlakeeno.ir/",
-    website_link: "https://amlakeeno.ir/",
-    imageUrl: "/uncertainty.jpg",
+    imageUrl: "/amlakeeno.png",
   },
 ];
 

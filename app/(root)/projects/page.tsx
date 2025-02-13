@@ -79,7 +79,8 @@ const Project = () => {
               name={project.name}
               year={project.year}
               description={project.description}
-              source_code_link={project.source_code_link}
+              source_code_link_front={project.source_code_link_front}
+              source_code_link_back={project.source_code_link_back}
               website_link={project.website_link}
               imageUrl={project.imageUrl}
               tags={project.tags}

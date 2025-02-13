@@ -33,14 +33,14 @@ const Publication = () => {
     setIsViewerOpen(true);
   };
  
-
+  // In Collaboration with Deakin University
 
     return (
    
       <section className="container flex flex-col items-center">
       <Heading
         className="md:text-justify"
-        tag="What I did in AI-In Collaboration with Deakin University"
+        tag="What I did in AI?"
         title="Publication."
         text="
         Uncertainty Quantification (UQ) enhances the reliability of AI models by
