@@ -10,6 +10,8 @@ const ibmPlexSerif = IBM_Plex_Serif({
   variable: "--font-ibm-plex-serif",
 });
 
+
+
 export const metadata: Metadata = {
   manifest: "/manifest.json",
   title: "Maryam Habibpour",

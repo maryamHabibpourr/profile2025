@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Link from "next/link";
-import {  BrainCircuit, Database } from "lucide-react";
+import { BrainCircuit, Database } from "lucide-react";
 import {
   Tooltip,
   TooltipContent,
@@ -27,7 +26,7 @@ const CaseStudyCard: React.FC<CaseStudy> = ({
 }) => {
   return (
     <div className={`${className} w-full my-1 px-4`}>
-      <div className="flex flex-col md:flex-row items-center justify-between md:gap-1">
+      <div className="flex flex-col md:flex-row items-start justify-between md:gap-1">
         <div className="flex items-center gap-2">
           <h5 className="font-semibold text-sx text-red-800">{title}</h5>
         </div>

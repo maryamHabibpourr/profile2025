@@ -9,7 +9,7 @@ const Footer = () => {
 
       <p className="w-fit text-xs font-semibold text-gray-800 flex flex-wrap items-center justify-center pt-2 border-t border-gray-400 ">
         Made with <Heart className="w-4 h-4 text-red-500" />,{" "}
-        <Coffee className="w-4 h-4 text-brown-500" />{" "}
+        <Coffee className="w-4 h-4 text-brown-500 ml-1" />,{" "}
         {links.map((link, index) => (
           <React.Fragment key={link.href}>
             {index > 0 && ", "}

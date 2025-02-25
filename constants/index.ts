@@ -30,10 +30,6 @@ export const links = [
   { href: "https://nextjs.org", label: "Next.js" },
   { href: "https://tailwindcss.com", label: "Tailwind CSS" },
   {
-    href: "https://www.django-rest-framework.org/",
-    label: "Django Rest Framework",
-  },
-  {
     href: "https://github.com/maryamHabibpourr/blogPost",
     label: "Github",
   },
@@ -41,8 +37,6 @@ export const links = [
   { href: "https://gemini.com", label: "Gemini" },
   { href: "https://shadcn.com", label: "shadcn" },
 ];
-
-
 
 export const projects = [
   {
@@ -134,9 +128,6 @@ export const projects = [
     imageUrl: "/amlakeeno.png",
   },
 ];
-
-
-
 
 export const caseStudies = [
   {

@@ -4,6 +4,8 @@ import Image from "next/image";
 import Footer from "@/components/Footer";
 import ChatBot from "@/components/ChatBot";
 
+
+
 export default async function RootLayout({
   children,
 }: Readonly<{

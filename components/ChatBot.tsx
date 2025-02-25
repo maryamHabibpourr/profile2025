@@ -34,17 +34,6 @@ const ChatBot = () => {
   const [showChatIcon, setShowChatIcon] = useState(false);
   const chatIconRef = useRef<HTMLButtonElement>(null);
 
-  const {
-    messages,
-    input,
-    handleInputChange,
-    handleSubmit,
-    isLoading,
-    stop,
-    reload,
-    error,
-  } = useChat({ api: "/api/gemini" });
-
   // const {
   //   messages,
   //   input,
@@ -54,7 +43,18 @@ const ChatBot = () => {
   //   stop,
   //   reload,
   //   error,
-  // } = useChat({ api: "/api/openai" });
+  // } = useChat({ api: "/api/gemini" });
+
+  const {
+    messages,
+    input,
+    handleInputChange,
+    handleSubmit,
+    isLoading,
+    stop,
+    reload,
+    error,
+  } = useChat({ api: "/api/openai" });
 
   const scrollRef = useRef<HTMLDivElement>(null);
 
