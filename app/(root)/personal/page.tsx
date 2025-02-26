@@ -1,10 +1,11 @@
 import Heading from "@/shared/Heading";
+import Section from "@/shared/Section";
 import Image from "next/image";
 import React from "react";
 
 const Personal = () => {
   return (
-    <main className="w-full h-fit-content py-4 px-4">
+    <Section className="h-fit-content py-4 px-4">
       <section className="w-full flex flex-col md:flex-row gap-2 items-center justify-center">
         <Image
           src="/maryam.jpg"
@@ -103,7 +104,7 @@ const Personal = () => {
           ]}
         />
       </section>
-    </main>
+    </Section>
   );
 };
 

@@ -18,6 +18,36 @@ export const profileData = {
     interest:
       "I’m drawn to web development with JavaScript and TypeScript because of the fast-evolving ecosystem and the excitement of creating impactful applications with modern web technologies.",
   },
+  personal: {
+    name: "Maryam",
+    meaning:
+      "My name is Maryam (written as 'مریم' in Persian). It is a name of deep historical and religious significance, as it is also the name of Mary, the mother of Jesus Christ, revered in both Christianity and Islam.",
+    imageUrl: "/maryam.jpg",
+  },
+  hobbies: {
+    activities:
+      "I have an insatiable hunger for learning—random documentaries, tech articles, history, psychology, and even deep dives into Wikipedia's 'random article' button. I also enjoy scrolling through X (formerly Twitter), reading and exploring different topics.",
+    movies:
+      "I’m a huge movie enthusiast, and one of my all-time favorite series is 'Power', which I’ve rewatched multiple times over the past five years.",
+    animals:
+      "Beyond tech and movies, I have a deep love for animals. Their presence brings me joy, and I’ve always felt a strong connection to them.",
+    sports: {
+      childhood:
+        "Sports have been a big part of my life since childhood. I played handball for six years as part of my regional team, winning medals alongside my teammates.",
+      current:
+        "Nowadays, I enjoy rock climbing, horseback riding, and most importantly, strength training, which has become an essential part of my routine.",
+    },
+    links: [
+      {
+        title: "Wikipedia's Random Article",
+        url: "https://en.wikipedia.org/wiki/Special:Random",
+      },
+      {
+        title: "X (formerly Twitter)",
+        url: "https://twitter.com",
+      },
+    ],
+  },
   skills: {
     expertise:
       "I have worked on full-stack web applications, AI-driven platforms, and automation solutions using Next.js, React, and Django, containerized with Docker.",
@@ -148,4 +178,29 @@ export const profileData = {
       imageUrl: "/amlakeeno.png",
     },
   ],
+  research: {
+    title: "Uncertainty Quantification in AI Models",
+    description:
+      "Uncertainty Quantification (UQ) enhances the reliability of AI models by estimating confidence in predictions, crucial for fraud detection and defect identification. In fraud detection, deep learning models struggle with unseen data and can make overconfident errors. Similarly, in manufacturing, CNN-based defect detection models face challenges with limited training data and real-world variations. UQ methods, like Monte Carlo Dropout and Ensemble Learning, address these issues by identifying uncertain predictions, allowing expert intervention when needed. This improves trust, interpretability, and decision-making in AI-driven systems.",
+    tags: [
+      {
+        name: "AI",
+      },
+      {
+        name: "Uncertainty Quantification",
+      },
+      {
+        name: "Fraud Detection",
+      },
+      {
+        name: "Defect Detection",
+      },
+      {
+        name: "Monte Carlo Dropout",
+      },
+      {
+        name: "Ensemble Learning",
+      },
+    ],
+  },
 };

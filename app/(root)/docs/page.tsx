@@ -4,6 +4,7 @@ import { getPostsMeta } from "@/lib/posts";
 import ListItem from "@/shared/ListItem";
 import Heading from "@/shared/Heading";
 import MachinLearningProjects from "@/components/MachinLearningProjects";
+import Section from "@/shared/Section";
 
 const Docs = async () => {
   const posts = await getPostsMeta();
@@ -13,7 +14,7 @@ const Docs = async () => {
   }
 
   return (
-    <main className="w-full h-fit-content py-4 px-4">
+    <Section className="flex-1 px-4 pt-2 pb-6">
       <Publication />
       <MachinLearningProjects />
       <section className="container pt-4 flex flex-col items-center">
@@ -31,7 +32,7 @@ const Docs = async () => {
           </div>
         </div>
       </section>
-    </main>
+    </Section>
   );
 };
 
