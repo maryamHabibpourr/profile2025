@@ -2,7 +2,6 @@
 /* eslint-disable react/no-children-prop */
 /* eslint-disable @typescript-eslint/no-explicit-any */
 
-
 "use client";
 
 import React, { useState, useEffect, useRef, Children } from "react";
@@ -34,17 +33,6 @@ const ChatBot = () => {
   const [showChatIcon, setShowChatIcon] = useState(false);
   const chatIconRef = useRef<HTMLButtonElement>(null);
 
-  // const {
-  //   messages,
-  //   input,
-  //   handleInputChange,
-  //   handleSubmit,
-  //   isLoading,
-  //   stop,
-  //   reload,
-  //   error,
-  // } = useChat({ api: "/api/gemini" });
-
   const {
     messages,
     input,
@@ -54,7 +42,18 @@ const ChatBot = () => {
     stop,
     reload,
     error,
-  } = useChat({ api: "/api/openai" });
+  } = useChat({ api: "/api/gemini" });
+
+  // const {
+  //   messages,
+  //   input,
+  //   handleInputChange,
+  //   handleSubmit,
+  //   isLoading,
+  //   stop,
+  //   reload,
+  //   error,
+  // } = useChat({ api: "/api/openai" });
 
   const scrollRef = useRef<HTMLDivElement>(null);
 
@@ -152,8 +151,8 @@ const ChatBot = () => {
                       <div
                         className={`inline-block p-2 rounded-lg ${
                           message.role === "user"
-                            ? "bg-red-400 text-base rounded"
-                            : "bg-gray-200 text-base rounded"
+                            ? "bg-red-300 text-base rounded-xl"
+                            : "bg-gray-200 text-base rounded-xl"
                         }`}
                       >
                         <ReactMarkdown
@@ -170,14 +169,14 @@ const ChatBot = () => {
                               return inline ? (
                                 <code
                                   {...props}
-                                  className="bg-gray-200 px-1 rounded"
+                                  className="bg-gray-200 px-1 rounded-lg"
                                 >
                                   {children}
                                 </code>
                               ) : (
                                 <pre
                                   {...props}
-                                  className="bg-gray-200 p-2 rounded"
+                                  className="bg-gray-200 p-2 rounded-lg"
                                 >
                                   <code>{children}</code>
                                 </pre>

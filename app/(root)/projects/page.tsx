@@ -1,11 +1,12 @@
 import { projects } from "@/constants";
 import Heading from "@/shared/Heading";
 import ProjectCard from "@/shared/ProjectCard";
+import Section from "@/shared/Section";
 import React from "react";
 
 const Project = () => {
   return (
-    <main className="w-full h-fit-content py-2 px-4">
+    <Section className="flex-1 px-4 pt-2 pb-6">
       <section className="container flex flex-col gap-2 items-center mt-2 mb-4">
         <Heading
           tag="My Skills"
@@ -15,7 +16,7 @@ const Project = () => {
               I have worked on{" "}
               <span className="">full-stack web applications</span>,{" "}
               <span className="">AI-driven platforms</span>, and{" "}
-              <span className="">automation solutions</span>, using{" "}
+              <span className="">automation solutions</span> using{" "}
               <a
                 href="https://nextjs.org"
                 target="_blank"
@@ -39,33 +40,47 @@ const Project = () => {
               >
                 Django
               </a>
-              , often containerized with <span className="">Docker</span>.
+              , containerized with <span className="">Docker</span>.
               <br />
-              My projects span real estate platforms, SaaS applications, and{" "}
-              <span className="">machine learning-based fraud detection</span>.
-              I specialize in <span className="">SEO optimization</span>,
-              real-time interactions with <span className="">WebSockets</span>,
-              and geolocation features using{" "}
-              <span className="">React Leaflet</span> and{" "}
-              <span className="">GeoDjango</span>
-              .
+              My projects include real estate platforms, SaaS applications, and{" "}
+              <span className="">fraud detection</span>. I specialize in{" "}
+              <span className="">SEO optimization</span>, real-time interactions
+              with <span className="">WebSockets</span>, and geolocation with{" "}
+              <span className="">React Leaflet</span>.
               <br />
-              On the backend, I leverage{" "}
+              On the backend, I use{" "}
               <a
                 href="https://www.django-rest-framework.org"
                 target="_blank"
-                className="text-red-800 font-semibold"
+                className="text-red-800"
               >
-                Django Rest Framework (DRF)
+                DRF
               </a>{" "}
-              with <span className="">PostgreSQL</span>, while my frontend
-              expertise includes <span className="">TypeScript</span>,{" "}
+              with <span className="">PostgreSQL</span>,{" "}
+              <a
+                href="https://redis.io"
+                target="_blank"
+                className="text-red-800"
+              >
+                Redis
+              </a>{" "}
+              for caching, and{" "}
+              <a
+                href="https://www.mongodb.com"
+                target="_blank"
+                className="text-red-800"
+              >
+                MongoDB
+              </a>{" "}
+              for NoSQL. Frontend expertise includes{" "}
+              <span className="">TypeScript</span>,{" "}
               <span className="">Tailwind CSS</span>, and{" "}
               <span className="">Zustand</span>.
-              <br />
-              My workflow integrates <span className="">CI/CD</span>, Linux
-              environments, and business automation, ensuring high-performance,
-              scalable applications.
+              <br />I am skilled in{" "}
+              <span className="text-red-800">optimizing legacy projects</span> for better
+              performance and security. Currently, I am focused on building{" "}
+              <span className="text-red-800">Chatbots</span> with{" "}
+              <span className="text-red-800">Retrieval-Augmented Generation (RAG)</span>.
             </>
           }
         />
@@ -74,7 +89,7 @@ const Project = () => {
           {projects.map((project) => (
             <ProjectCard
               key={project.id}
-              className="bg-red-100"
+              className=""
               index={project.id}
               name={project.name}
               year={project.year}
@@ -88,7 +103,7 @@ const Project = () => {
           ))}
         </div>
       </section>
-    </main>
+    </Section>
   );
 };
 

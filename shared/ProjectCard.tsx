@@ -45,18 +45,18 @@ const ProjectCard: React.FC<Project> = ({
 }) => {
   const [isViewerOpen, setIsViewerOpen] = useState(false);
 
+  const isEven = index % 2 === 0;
+  const flexDirection = isEven ? "md:flex-row-reverse" : "md:flex-row";
+
   return (
     <div
-      className={`${className} w-full flex flex-col-reverse md:flex-row items-center justify-center gap-2 my-2 p-4 rounded-xl`}
+      className={`${className} w-full flex flex-col-reverse md:flex-row items-center
+    md:items-start justify-between gap-2 my-2 p-4 border-b border-gray-300`}
       key={index}
-      style={{
-        boxShadow:
-          "0 -4px 6px -2px rgba(0,0,0,0.1), -4px 4px 6px -2px rgba(0,0,0,0.1), 4px 4px 6px -2px rgba(0,0,0,0.1)",
-      }}
     >
-      <div className="flex flex-col">
+      <div className="w-full md:max-w-1/2 flex flex-col">
         <div className="flex items-center gap-2">
-          <h5 className="font-semibold text-sm text-red-800">{name}</h5>
+          <h5 className="font-semibold text-lg text-red-800">{name}</h5>
           <span className="text-xs text-green-600">({year})</span>
         </div>
         <p className="font-semibold text-sm text-gray-800">{description}</p>
@@ -83,7 +83,7 @@ const ProjectCard: React.FC<Project> = ({
                       variant="outline"
                       className="py-2 px-3 rounded-full bg-transparent"
                     >
-                      <FaGithub size={20} className="text-green-600" />
+                      <FaGithub size={20} className="text-red-600" />
                     </Button>
                   </a>
                 </TooltipTrigger>
@@ -143,7 +143,7 @@ const ProjectCard: React.FC<Project> = ({
         </div>
       </div>
 
-      <div className="relative cursor-pointer">
+      <div className="w-full md:max-w-1/2 relative cursor-pointer">
         {imageUrl && (
           <>
             <Image

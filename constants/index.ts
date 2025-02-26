@@ -38,6 +38,10 @@ export const links = [
   { href: "https://shadcn.com", label: "shadcn" },
 ];
 
+
+
+
+
 export const projects = [
   {
     id: 3,
@@ -128,6 +132,10 @@ export const projects = [
     imageUrl: "/amlakeeno.png",
   },
 ];
+
+
+
+
 
 export const caseStudies = [
   {
