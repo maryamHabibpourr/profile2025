@@ -50,14 +50,13 @@ const ProjectCard: React.FC<Project> = ({
 
   return (
     <div
-      className={`${className} w-full flex flex-col-reverse md:flex-row items-center
-    md:items-start justify-between gap-2 my-2 p-4 border-b border-gray-300`}
+      className={`${className} w-full flex flex-col-reverse md:flex-row items-cente md:items-start  justify-between gap-2 my-2 p-4 border-b border-gray-300`}
       key={index}
     >
       <div className="w-full md:max-w-1/2 flex flex-col">
         <div className="flex items-center gap-2">
           <h5 className="font-semibold text-lg text-red-800">{name}</h5>
-          <span className="text-xs text-green-600">({year})</span>
+          <span className="text-xs text-gray-600">({year})</span>
         </div>
         <p className="font-semibold text-sm text-gray-800">{description}</p>
 
@@ -69,7 +68,7 @@ const ProjectCard: React.FC<Project> = ({
           ))}
         </div>
 
-        <div className="flex gap-2 mt-2">
+        <div className="flex gap-2 mt-4">
           <TooltipProvider>
             {source_code_link_front && (
               <Tooltip>
@@ -143,7 +142,7 @@ const ProjectCard: React.FC<Project> = ({
         </div>
       </div>
 
-      <div className="w-full md:max-w-1/2 relative cursor-pointer">
+      <div className="w-full md:max-w-1/2 relative cursor-pointer block items-start">
         {imageUrl && (
           <>
             <Image
@@ -151,7 +150,7 @@ const ProjectCard: React.FC<Project> = ({
               width={250}
               height={250}
               alt="image"
-              className="object-cover"
+              className="object-cover rounded-xl"
               onClick={() => setIsViewerOpen(true)}
             />
             <Viewer

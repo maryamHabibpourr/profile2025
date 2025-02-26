@@ -155,7 +155,7 @@ const ChatBot = () => {
                             : "bg-gray-200 text-base rounded-xl"
                         }`}
                       >
-                        <ReactMarkdown
+                        {/* <ReactMarkdown
                           children={message.content}
                           remarkPlugins={[remarkGfm]}
                           components={{
@@ -187,11 +187,59 @@ const ChatBot = () => {
                                 {children}
                               </ul>
                             ),
-                            ol: ({ children, ...props }: any) => (
-                              <ol {...props} className="list-decimal ml-4">
-                                {children}
-                              </ol>
-                            ),
+                            ol: ({ children, ...props }: any) => {
+                              const { ordered, ...restProps } = props;
+                              return (
+                                <ol
+                                  {...restProps}
+                                  className="list-decimal ml-4"
+                                >
+                                  {children}
+                                </ol>
+                              );
+                            },
+                          }}
+                        /> */}
+
+                        <ReactMarkdown
+                          children={message.content}
+                          remarkPlugins={[remarkGfm]}
+                          components={{
+                            // استفاده از کامپوننت سفارشی list برای کنترل رندر کردن لیست‌ها
+                            list: ({ ordered, children, ...props }: any) => {
+                              return ordered ? (
+                                <ol {...props} className="list-decimal ml-4">
+                                  {children}
+                                </ol>
+                              ) : (
+                                <ul {...props} className="list-disc ml-4">
+                                  {children}
+                                </ul>
+                              );
+                            },
+                            code({
+                              node,
+                              inline,
+                              className,
+                              children,
+                              ...props
+                            }) {
+                              return inline ? (
+                                <code
+                                  {...props}
+                                  className="bg-gray-200 px-1 rounded-lg"
+                                >
+                                  {children}
+                                </code>
+                              ) : (
+                                <pre
+                                  {...props}
+                                  className="bg-gray-200 p-2 rounded-lg"
+                                >
+                                  <code>{children}</code>
+                                </pre>
+                              );
+                            },
                           }}
                         />
                       </div>

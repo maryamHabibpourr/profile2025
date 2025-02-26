@@ -38,11 +38,49 @@ export const links = [
   { href: "https://shadcn.com", label: "shadcn" },
 ];
 
-
-
-
-
 export const projects = [
+  {
+    id: 4,
+    name: "AI Agent",
+    year: 2025,
+    description:
+    "This AI Agent helps users analyze YouTube transcripts, search Google Books, process JSONdata, and retrieve Customer, Order, and Comments data, offering smart insights for better decision-making.",
+  
+    tags: [
+      {
+        name: "nextjs-15",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "typeScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "convex",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "clerk",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "openai",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "langchain",
+        color: "green-text-gradient",
+      },
+      {
+        name: "wxflows",
+        color: "green-text-gradient",
+      },
+    ],
+    source_code_link_front: "https://github.com/maryamHabibpourr/AIAgent",
+    source_code_link_back: "",
+    website_link: "https://ai-agent-maryamhabibpourr-board-taem.vercel.app/",
+    imageUrl: "/aiagent.png",
+  },
   {
     id: 3,
     name: "Board",
@@ -51,6 +89,14 @@ export const projects = [
       "Board is a versatile platform that allows users to create and customize boards with various tools like text and drawings, making it easy to collaborate and organize ideas visually.",
     tags: [
       {
+        name: "nextjs-14",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "typeScript",
+        color: "green-text-gradient",
+      },
+      {
         name: "convex",
         color: "blue-text-gradient",
       },
@@ -58,10 +104,7 @@ export const projects = [
         name: "clerk",
         color: "green-text-gradient",
       },
-      {
-        name: "nextjs",
-        color: "pink-text-gradient",
-      },
+ 
     ],
     source_code_link_front:
       "https://github.com/maryamHabibpourr/board-next-convex-clerk",
@@ -132,10 +175,6 @@ export const projects = [
     imageUrl: "/amlakeeno.png",
   },
 ];
-
-
-
-
 
 export const caseStudies = [
   {

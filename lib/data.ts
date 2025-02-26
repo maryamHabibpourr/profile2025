@@ -4,8 +4,6 @@ export const initialMessage = {
     "you are an AI assistent for maryam profile, a platform that share the info of maryam exprience",
 };
 
-
-
 export const profileData = {
   overview: {
     name: "Maryam",
@@ -34,4 +32,120 @@ export const profileData = {
     workflow:
       "My workflow integrates CI/CD, Linux environments, and business automation for high-performance applications. Currently, I am focused on building Chatbots with advanced conversational AI, particularly using Retrieval-Augmented Generation (RAG) to provide intelligent and context-aware interactions.",
   },
+  projects: [
+    {
+      id: 4,
+      name: "AI Agent",
+      year: 2025,
+      description:
+        "This AI Agent helps users analyze YouTube transcripts, search Google Books, process JSONdata, and retrieve Customer, Order, and Comments data, offering smart insights for better decision-making.",
+      tags: [
+        {
+          name: "nextjs-15",
+        },
+        {
+          name: "typeScript",
+        },
+        {
+          name: "convex",
+        },
+        {
+          name: "clerk",
+        },
+        {
+          name: "openai",
+        },
+        {
+          name: "langchain",
+        },
+        {
+          name: "wxflows",
+        },
+      ],
+      source_code_link_front: "https://github.com/maryamHabibpourr/AIAgent",
+      source_code_link_back: "",
+      website_link: "https://ai-agent-maryamhabibpourr-board-taem.vercel.app/",
+      imageUrl: "/aiagent.png",
+    },
+    {
+      id: 3,
+      name: "Board",
+      year: 2024,
+      description:
+        "Board is a versatile platform that allows users to create and customize boards with various tools like text and drawings, making it easy to collaborate and organize ideas visually.",
+      tags: [
+        {
+          name: "nextjs-14",
+        },
+        {
+          name: "typeScript",
+        },
+        {
+          name: "convex",
+        },
+        {
+          name: "clerk",
+        },
+      ],
+      source_code_link_front:
+        "https://github.com/maryamHabibpourr/board-next-convex-clerk",
+      source_code_link_back: "",
+      website_link: "https://board-nine-theta.vercel.app/",
+      imageUrl: "/board.png",
+    },
+    {
+      id: 2,
+      name: "GilanJan",
+      year: 2023,
+      description:
+        "Gilanjan is a platform that allows users to reserve spots and services in Gilan province, making travel and leisure planning easier and more convenient.",
+      tags: [
+        {
+          name: "nextjs",
+        },
+        {
+          name: "real chat",
+        },
+        {
+          name: "djangoRestFramework",
+        },
+        {
+          name: "postgress",
+        },
+      ],
+      source_code_link_front:
+        "https://github.com/maryamHabibpourr/gilanjan.client",
+      source_code_link_back:
+        "https://github.com/maryamHabibpourr/gilanjan-django-api",
+      website_link: "https://gilanjan.com/",
+      imageUrl: "gilanjan.png",
+    },
+    {
+      id: 1,
+      name: "Amlak Eeno",
+      year: 2022,
+      description:
+        "Web-based platform designed for users to effortlessly search home rentals and purchases in Tehran, offering a convenient and efficient solution for housing needs.",
+      tags: [
+        {
+          name: "react",
+        },
+        {
+          name: "leaflet",
+        },
+        {
+          name: "djangoRestframework",
+        },
+        {
+          name: "postGIS",
+        },
+      ],
+      source_code_link_front:
+        "https://github.com/maryamHabibpourr/AmlakEenoClient-React-LeafLet",
+      source_code_link_back:
+        "https://github.com/maryamHabibpourr/AmlakeenoApi-Django-DRF",
+      website_link: "https://amlakeeno.ir/",
+      imageUrl: "/amlakeeno.png",
+    },
+  ],
 };
