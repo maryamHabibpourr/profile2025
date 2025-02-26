@@ -1,6 +1,7 @@
 import { streamText, Message } from "ai";
 import { createGoogleGenerativeAI } from "@ai-sdk/google";
-import { initialMessage, profileData } from "@/lib/data";
+import {  profileData } from "@/lib/data";
+// import { initialMessage } from "@/lib/data";
 
 const google = createGoogleGenerativeAI({
   apiKey: process.env.NEXT_PUBLIC_GOOGLE_API_KEY || "",
