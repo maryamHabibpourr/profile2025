@@ -6,8 +6,7 @@ import { notFound } from "next/navigation";
 // import "highlight.js/styles/github-dark.css";
 import "highlight.js/styles/atom-one-light.css";
 
-export const revalidate = 300; 
-
+export const revalidate = 300;
 
 type Props = {
   params: {
@@ -16,7 +15,7 @@ type Props = {
 };
 
 export async function generateStaticParams() {
-  const posts = await getPostsMeta(); 
+  const posts = await getPostsMeta();
 
   if (!posts) return [];
 
@@ -26,7 +25,7 @@ export async function generateStaticParams() {
 }
 
 export async function generateMetadata({ params: { postId } }: Props) {
-  const post = await getPostByName(`${postId}.mdx`); 
+  const post = await getPostByName(`${postId}.mdx`);
 
   if (!post) {
     return {
@@ -40,9 +39,7 @@ export async function generateMetadata({ params: { postId } }: Props) {
 }
 
 const Doc = async ({ params: { postId } }: Props) => {
-  const post = await getPostByName(`${postId}.mdx`); 
-  
-
+  const post = await getPostByName(`${postId}.mdx`);
 
   if (!post) notFound();
 
@@ -56,14 +53,13 @@ const Doc = async ({ params: { postId } }: Props) => {
     </Link>
   ));
 
-
-
   // const AutoRevalidate = (await import('@/components/AutoRevalidate')).default;
-
 
   return (
     <section className="w-full h-fit-content py-4 px-4">
-      <div className="px-4 md:px-6 prose prose-xl prose-slate mx-auto text-white/90">
+      <div
+        className="px-4 md:px-6 prose   prose-h2:text-xl prose-h3:text-lg prose-slate mx-auto text-white/90"
+      >
         <h2 className="text-2xl text-red-800 mt-4 mb-0 text-center">
           {meta.title}
         </h2>
@@ -83,7 +79,6 @@ const Doc = async ({ params: { postId } }: Props) => {
           <Link href="/docs" className="text-sm text-red-600">
             ← Back to Docs
           </Link>
-          
         </p>
       </div>
     </section>
