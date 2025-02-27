@@ -6,7 +6,8 @@ import { notFound } from "next/navigation";
 // import "highlight.js/styles/github-dark.css";
 import "highlight.js/styles/atom-one-light.css";
 
-export const revalidate = 0;
+export const revalidate = 300; 
+
 
 type Props = {
   params: {
@@ -40,6 +41,8 @@ export async function generateMetadata({ params: { postId } }: Props) {
 
 const Doc = async ({ params: { postId } }: Props) => {
   const post = await getPostByName(`${postId}.mdx`); 
+  
+
 
   if (!post) notFound();
 
@@ -52,6 +55,11 @@ const Doc = async ({ params: { postId } }: Props) => {
       {tag}
     </Link>
   ));
+
+
+
+  // const AutoRevalidate = (await import('@/components/AutoRevalidate')).default;
+
 
   return (
     <section className="w-full h-fit-content py-4 px-4">
@@ -75,6 +83,7 @@ const Doc = async ({ params: { postId } }: Props) => {
           <Link href="/docs" className="text-sm text-red-600">
             ← Back to Docs
           </Link>
+          
         </p>
       </div>
     </section>

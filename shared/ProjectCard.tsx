@@ -50,7 +50,7 @@ const ProjectCard: React.FC<Project> = ({
 
   return (
     <div
-      className={`${className} w-full flex flex-col-reverse md:flex-row items-cente md:items-start  justify-between gap-2 my-2 p-4 border-b border-gray-300`}
+      className={`${className} w-full flex flex-col-reverse  md:flex-row md:items-start justify-between gap-2 my-2 p-4 border-b border-gray-300`}
       key={index}
     >
       <div className="w-full md:max-w-1/2 flex flex-col">
