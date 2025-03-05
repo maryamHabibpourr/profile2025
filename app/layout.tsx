@@ -15,7 +15,7 @@ const ibmPlexSerif = IBM_Plex_Serif({
 export const metadata: Metadata = {
   manifest: "/manifest.json",
   title: "Maryam Habibpour",
-  description: "web developer",
+  description: "Web Developer and AI Researcher",
   icons: {
     icon: "/maryam.jpg",
   },

@@ -94,7 +94,7 @@ const Hero = () => {
             "My recent résumé can be found ",
             <a
               key="resume-link"
-              href="/resume/maryam_CV.pdf"
+              href="/resume/MaryamHabibpour-CV.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="text-red-800"
