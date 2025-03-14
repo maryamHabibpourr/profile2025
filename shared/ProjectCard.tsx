@@ -21,7 +21,7 @@ type Tag = {
 type Project = {
   index: number;
   name?: string;
-  year?: number;
+  year?: number | string;
   className?: string;
   description?: string;
   tags?: Tag[];
@@ -50,7 +50,7 @@ const ProjectCard: React.FC<Project> = ({
 
   return (
     <div
-      className={`${className} w-full flex flex-col-reverse  md:flex-row md:items-start justify-between gap-2 my-2 p-4 border-b border-gray-300`}
+      className={`${className} w-full flex flex-col-reverse  md:flex-row items-start justify-between gap-2 my-2 p-4 border-b border-gray-300`}
       key={index}
     >
       <div className="w-full md:max-w-1/2 flex flex-col">
@@ -142,7 +142,7 @@ const ProjectCard: React.FC<Project> = ({
         </div>
       </div>
 
-      <div className="w-full md:max-w-1/2 relative cursor-pointer block items-start">
+      <div className="w-full md:max-w-1/2 relative cursor-pointer  bg-red-500  flex justify-center items-center">
         {imageUrl && (
           <>
             <Image

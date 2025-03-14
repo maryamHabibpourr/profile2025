@@ -38,14 +38,54 @@ export const links = [
   { href: "https://shadcn.com", label: "shadcn" },
 ];
 
+
+
 export const projects = [
+  {
+    id: 5,
+    name: "َAgentTube",
+    year: "2025-InProgress",
+    description:
+    "This AI Agent saas answers user queries based on video content, generates insights and summaries, and provides access to transcripts and other generated data.",
+  
+    tags: [
+      {
+        name: "nextjs-15",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "typeScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "convex",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "schematic",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "openai",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "clerk",
+        color: "green-text-gradient",
+      },
+    ],
+    source_code_link_front: "https://github.com/maryamHabibpourr/AI-Agent-saas/blob/main/README.md",
+    source_code_link_back: "",
+    website_link: "https://agentyoutube.vercel.app/",
+    imageUrl: "/agentTube.png",
+  },
   {
     id: 4,
     name: "AI Agent",
-    year: 2025,
+    year: 2024,
     description:
-    "This AI Agent helps users analyze YouTube transcripts, search Google Books, process JSONdata, and retrieve Customer, Order, and Comments data, offering smart insights for better decision-making.",
-  
+      "This AI Agent helps users analyze YouTube transcripts, search Google Books, process JSONdata, and retrieve Customer, Order, and Comments data, offering smart insights for better decision-making.",
+
     tags: [
       {
         name: "nextjs-15",
@@ -104,7 +144,6 @@ export const projects = [
         name: "clerk",
         color: "green-text-gradient",
       },
- 
     ],
     source_code_link_front:
       "https://github.com/maryamHabibpourr/board-next-convex-clerk",
