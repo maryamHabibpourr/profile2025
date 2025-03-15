@@ -5,7 +5,7 @@ import { links } from "@/constants";
 
 const Footer = () => {
   return (
-    <div className="max-w-[calc(100%-4%)] md:w-full flex flex-col items-center justify-center py-6 px-4">
+    <div className="max-w-[calc(100%-4%)] md:w-full flex flex-col items-center justify-center py-6 px-4 mt-4">
 
       <p className="w-fit text-xs font-semibold text-gray-800 flex flex-wrap items-center justify-center pt-2 border-t border-gray-400 ">
         Made with <Heart className="w-4 h-4 text-red-500" />,{" "}

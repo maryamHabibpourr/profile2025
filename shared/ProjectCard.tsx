@@ -142,7 +142,7 @@ const ProjectCard: React.FC<Project> = ({
         </div>
       </div>
 
-      <div className="w-full md:max-w-1/2 relative cursor-pointer  bg-red-500  flex justify-center items-center">
+      <div className="w-full md:max-w-1/2 relative cursor-pointer flex justify-center items-center">
         {imageUrl && (
           <>
             <Image

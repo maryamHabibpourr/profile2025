@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   },
 };
 
+
+
+
 export const viewport: Viewport = {
   themeColor:
     "linear-gradient(to bottom,rgb(218, 100, 126) 0%,rgb(228, 187, 195) 50%, rgba(15, 14, 15, 0) 100%)",
